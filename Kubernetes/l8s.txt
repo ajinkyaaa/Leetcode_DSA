@@ -1,0 +1,14 @@
+node -> virtual machine
+
+pod ->=================================
+ abstraction over container ->docker
+ cretes layer on top of container
+ usually 1 app per pod
+ each pod gets ip address -> can communicaste with ip address
+                                pod1
+                        pod2            pod3 (service) =>ip address
+ if pod dies, new replaces it. -> service attaches to pod, independant if pod alive or dead -> service have permanent ip address
+replicas => deploymnt of blueprint pods
+Database => stateful sets => they write to a database and synchronized and replicating pods
+always deploy database ouytsdide of pods
+

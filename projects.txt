@@ -1,0 +1,181 @@
+About me:-
+I started working as a full stack sd in eclerx and was working in C# .NET SQL, javascript angular. 
+Some of the projects I worked on were Recruitment portal and Inventory management.
+
+Recruitment portal:-
+start to end process from recruiter to offer generation. 
+Interview rounds.
+
+Inventory management:-
+Devices which users use such as laptops chairs etcs. 
+
+I came to US for further studies and one course I liked the most was deep learning and machine learning. 
+I created some personal projects using CNN for image detection and stock market predictions. Worked on a robot freenova to detect face and move head.
+
+IBM:-
+I started working as an intern and technologies I used were angular javascript for reading alerts and SQL for querying database.
+After I joined full time, my focus was learning big data technologies because they integrated closely with Machine learning use case. 
+My big data analytics course helped my understanding and the technologies I can use. 
+
+Right now I am working on network data which IBM gets from all around the globe. I use Apache streamsets to process files and
+store it into nosql database such as mongo solr hdfs.
+I use python and scala to generate reports using apache spark which is then consumed by the UI.
+Some of the projects I worked on here was subnet utilization, seven Signal, NetCLient.
+
+
+Subnet utilization:-
+It looks for subnets which have utilization greater than 80% in 24 hour window. This helped the client to identify subnets which needs attention, 
+there might be a conference or an attack or maybe other nodes might be down. If the subnet utilization drops, then it can be DOS attack. It also looks for the pattern of subnets
+and classifies it as sporadic or new.
+
+
+Some of the use cases:-
+1 Implemented average utilization field which looked for historic data for the subnet and shows the percent change in utilization.
+2 Identified the pattern in the subnet utilization which helped us to categorize the subnet as new,  contiinuous or sporadic
+3 Split the report across different geo which helped us to parallely run the report and get latest data every 4 hours.
+4 Implemented geosummary feature in the report which looks for normal/high utilization of wired/wifi/IIW subnets and display them in pie chart to get high level view
+5 Created and maintained a collection to identify subnets which are ignored/priority or in progress and manage them in the UI.
+6 Generated subnet trend alerting realtime feature which sends a slack notification if the utilization of a subnet exceeds 2x or its normal value and greater than threshold.
+7 Generated subnet instant alerting realtime feature which helps to track priority subnets and send a slack notification if the utilization exceeds 75% at any given point of time.
+
+sevenSignal:-
+This report looks out for sensors and their accesspoint information. On device can have many access points and one access points can generate multiple alerts.
+
+Some of the use cases:-
+The dashboard produces alerts based on certain thresholds which help us indicate areas that need wifi support. The alerts range from HTTP Throughput to DHCP Success Rate. 
+The dashboard also helps indicate whether or not a specific eye(sensor) is down which can lead to inaccurate data.
+It also helps with Organization of alerts and down eyes. The ability to search through a list of alerts based off area name, MAC address, name of AP/EYE and alert name helps us analyze
+where and why problems are occurring.
+Organization is also improved with the dashboard.
+Its hard to keep track of historical data which can show us trends so having the dashboard with time intervals helps the team see trends that are happening and can analyze why it is happening.
+Parallel processing and SQL.
+
+NetClient:-
+Situation:- NetClient report to identify people using shared logins
+Task:- find people accessing from different locations
+Action:- Haversine distance formula to calculate distance, User Pattern detection, monthly data instead of daily
+Result:- more anomalies detected around 2x
+
+NSOT:-
+
+Parent Object:- 
+ID 
+IP
+Mac
+
+Authentication:-
+SasVPN
+
+Subnet:-
+BA
+
+Ownership:-
+WhoIs
+
+Location:-
+Nw communications
+
+Use case:- 
+Find Path from source to destination
+Analytics on every individual subnet to find its nearest neighbors
+graph datastructure and drill down.
+
+Analytics on top talkers.
+Parallel processing on child data and load them asynchronously
+find info between start time and end time.
+
+
+
+Q:-
+2. How will my performance be measured?
+4. What are the biggest challenges facing the team right now?
+5. What technology is the company currently using?
+
+
+Data:-
+Datalake- throw any info
+database -; record transaction
+datawarehouse:- large info cant fit into database
+unstructured data cant fit;- data warehouse
+
+Citadel competitors:-
+ deshaw.com with 118.6K visits. 
+ goldmansachs.com, with 927.0K visits in April 2023, and closing off the top 3 is
+twosigma.com 
+
+It is the largest designated market maker on the New York Stock Exchange.
+owner  Kenneth C. Griffin
+
+
+Why citadel:-
+
+Citadel Securities is a leading global market maker, providing liquidity to a wide range of financial markets and trading products. 
+The firm is known for its cutting-edge technology, innovative approach to trading, and commitment to hiring top talent.
+
+There are several reasons why one might want to interview at Citadel Securities. 
+First, the firm offers challenging and rewarding work in a dynamic and fast-paced environment. 
+The company is at the forefront of technological innovation in trading, and employees have the opportunity to work with some of the best tools and platforms in the industry.
+
+Second, Citadel Securities is committed to developing its employees and providing them with opportunities for growth and advancement.
+The firm offers a range of training and development programs, as well as mentorship and coaching from experienced traders and managers.
+
+Third, Citadel Securities is a highly respected and well-regarded firm in the financial industry. 
+Working at the company can provide a great opportunity to build your network and establish yourself as a top performer in the industry.
+
+Finally, Citadel Securities is known for offering competitive compensation packages and excellent benefits.
+ The firm is committed to providing its employees with a great work-life balance, and offers a range of perks and benefits designed to support their well-being and success.
+
+Overall, if you are looking for a challenging, dynamic, and rewarding career in the financial industry, Citadel Securities is a great place to consider.
+
+Datalake:-
+A data lake is a large repository or storage system that can hold vast amounts of structured, semi-structured, and unstructured data in its native format.
+ It is designed to support big data analytics and provide a scalable, flexible, and cost-effective way to store and manage large volumes of data.
+
+Unlike traditional data storage systems that require data to be pre-processed and structured before it can be stored, 
+a data lake can ingest raw data in its native format and store it for later use.
+ This makes it easier for organizations to capture and retain all types of data, including data from social media, IoT devices, and other sources, without worrying about data loss or processing overhead.
+
+Data lakes typically use distributed computing systems like Hadoop or Spark, which allow the data to be processed and analyzed using parallel processing techniques across multiple nodes or clusters. 
+This enables organizations to derive insights from the data more quickly and easily, without the need for complex data transformation or schema-on-write processes.
+
+Data lakes are often used in conjunction with data warehouses, which are designed to store structured data in a more structured and organized format. Together, data lakes and data warehouses can provide a complete solution for managing and analyzing large volumes of data, allowing organizations to gain deeper insights into their operations, customers, and markets.
+
+HDFS:-
+cluster of computer to colect and store => mapreduce
+previously teradata exadata
+
+hdfs > datawarehouse:= horizontal scalability & low cost
+
+Datalake:-
+inhest storage process transform
+
+storage:-hdfs, amazon s3
+process:- computation:- qualkity chck, transforming, corelating, aggregating, ML model
+    orchestration:- formation of cluster, scaling (3 competitors yarn, kubernetes and Mesos)
+    data processing framewrk:- apache spark
+-----------------------
+YARN:-that allows multiple data processing engines like MapReduce, Spark, and Hive to run on the same cluster. A YARN cluster is a set of computers or nodes that are configured to work together to run data processing tasks using the YARN resource manager.
+
+YARN is responsible for managing the resources (CPU, memory, disk, and network) of a Hadoop cluster, and it provides a centralized mechanism for scheduling and allocating resources to various data processing jobs. With YARN, different types of data processing engines can coexist on the same cluster, and each engine can use the resources allocated to it efficiently without interfering with other engines.
+
+A YARN cluster consists of two main components: a resource manager and a node manager. The resource manager is responsible for managing the resources of the entire cluster, while the node manager is responsible for managing the resources of individual nodes.
+
+The resource manager receives resource requests from different data processing engines and allocates resources to them based on their requirements and priorities. The node manager is responsible for launching and monitoring data processing tasks on each node, and it reports back to the resource manager on the status of these tasks.
+
+Overall, a YARN cluster provides a flexible and efficient way to manage resources in a Hadoop cluster and enables different data processing engines to coexist and work together seamlessly. This makes it easier for organizations to process and analyze large volumes of data using multiple technologies in a unified and scalable manner.
+--------------------
+
+
+
+n = n == 9+99 +999+9999+321
+
+10**1 + 10**2
+
+"99"
++"9"
+
+9 &99
+
+10 + 100 +1000
+
+pri
