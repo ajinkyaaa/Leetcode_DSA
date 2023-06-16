@@ -1,0 +1,163 @@
+==================================================Class =====================================================
+public class Person {
+
+    private String firstName;
+    private String lastName;
+    
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    
+    public String getFirstName() {
+        return this.firstName;
+    }
+    
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    
+    public String getLastName() {
+        return this.lastName;
+    }
+    
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    
+}
+
+class Person(var name: String, var vocation: String)
+
+val p = new Person("Robert Allen Zimmerman", "Harmonica Player")
+==================================================Class ======================================================
+
+======================================================Inheritance======================================================
+
+class Animal {
+  def sound(): Unit = {
+    println("The animal makes a sound.")
+  }
+}
+
+class Dog extends Animal {
+  override def sound(): Unit = {
+    println("The dog barks.")
+  }
+
+  def wagTail(): Unit = {
+    println("The dog wags its tail.")
+  }
+}
+
+object Main {
+  def main(args: Array[String]): Unit = {
+    val animal = new Animal()
+    animal.sound() // Output: The animal makes a sound.
+
+    val dog = new Dog()
+    dog.sound() // Output: The dog barks.
+    dog.wagTail() // Output: The dog wags its tail.
+  }
+}
+
+======================================================Pattern Matching======================================================
+def matchExample(value: Any): Unit = {
+  value match {
+    case 1 => println("One")
+    case "hello" => println("Hello, World!")
+    case true => println("Boolean value is true")
+    case false => println("Boolean value is false")
+    case list: List[Int] => println("List of integers: " + list)
+    case (x, y) => println("Tuple: " + x + ", " + y)
+    case _ => println("Other value")
+  }
+}
+
+// Usage
+matchExample(1) // Output: One
+matchExample("hello") // Output: Hello, World!
+matchExample(true) // Output: Boolean value is true
+matchExample(false) // Output: Boolean value is false
+matchExample(List(1, 2, 3)) // Output: List of integers: List(1, 2, 3)
+matchExample((10, 20)) // Output: Tuple: 10, 20
+matchExample(3.14) // Output: Other value
+======================================================Pattern Matching======================================================
+
+======================================================For loop======================================================
+val people = List(
+    "Bill", 
+    "Candy", 
+    "Karen", 
+    "Leo", 
+    "Regina"
+)
+for (p <- people) println(p)
+
+======================================================For loop======================================================
+
+======================================================Dataframe======================================================
+import org.apache.spark.sql.{SparkSession, DataFrame}
+import org.apache.spark.sql.functions._
+
+// Create a SparkSession
+val spark = SparkSession.builder()
+  .appName("DataFrameExample")
+  .master("local[*]")
+  .getOrCreate()
+
+// Define a case class representing a Person
+case class Person(name: String, age: Int)
+
+// Create a sample DataFrame
+val peopleData = Seq(
+  Person("Alice", 25),
+  Person("Bob", 30),
+  Person("Charlie", 35),
+  Person("David", 40)
+)
+val peopleDF = spark.createDataFrame(peopleData)
+
+// Display the DataFrame
+peopleDF.show()
+
+// Perform operations on the DataFrame
+val filteredDF = peopleDF.filter(col("age") > 30)
+val count = filteredDF.count()
+
+// Display the filtered DataFrame and count
+filteredDF.show()
+println("Count: " + count)
+
+// Perform aggregation on the DataFrame
+val averageAge = peopleDF.agg(avg("age")).head().getDouble(0)
+
+// Display the average age
+println("Average age: " + averageAge)
+
+// Stop the SparkSession
+spark.stop()
+
+======================================================Dataframe======================================================
+
+======================================================Dictionary======================================================
+import scala.collection.mutable.Map
+
+// Create a mutable map
+val dictionary: Map[String, String] = Map()
+
+// Add key-value pairs
+dictionary += ("apple" -> "a fruit")
+dictionary += ("car" -> "a vehicle")
+
+// Access values
+println(dictionary("apple"))  // Output: "a fruit"
+
+// Update a value
+dictionary("apple") = "a healthy fruit"
+
+// Remove a key-value pair
+dictionary -= "car"
+
+val filteredEntries = entries.filterNot(_.key == "car")
+======================================================Dictionary======================================================

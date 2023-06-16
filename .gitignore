@@ -8,3 +8,8 @@ JPMorganChase
 ./Apple.txt
 backup
 Transperfect
+.classpath
+.project
+.settings/
+target/
+AWS/

@@ -11,3 +11,23 @@ class Solution:
                 l += 1
             else:
                 return [l + 1, r + 1]
+
+
+"""
+
+tbl1:-
+
+name age phn    
+a     1   212
+c     1   212
+
+tbl2:-
+
+name age phn  
+a     1   212
+b     1   212
+
+select * from tbl1 inner join tbl2 on tbl1.name = tbl2.name and tbl1.age = tbl2.age and tbl1.phn - tbl2.phn
+
+
+"""

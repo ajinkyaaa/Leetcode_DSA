@@ -1,0 +1,665 @@
+2023.05.23 18:57:27 INFO  Started: Metals version 0.11.12 in workspace '/Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world' for client Visual Studio Code 1.70.2.
+May 23, 2023 6:57:27 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+May 23, 2023 6:57:27 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+May 23, 2023 6:57:27 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+May 23, 2023 6:57:27 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:/Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/.metals/metals (H2 2.1)
+May 23, 2023 6:57:27 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+May 23, 2023 6:57:27 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.025s)
+May 23, 2023 6:57:27 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+May 23, 2023 6:57:27 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+May 23, 2023 6:57:27 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+May 23, 2023 6:57:27 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+May 23, 2023 6:57:27 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+May 23, 2023 6:57:28 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+May 23, 2023 6:57:28 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.056s)
+2023.05.23 18:57:28 INFO  time: initialize in 1.18s
+2023.05.23 18:57:32 WARN  Build server is not auto-connectable.
+2023.05.23 19:47:29 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/Main.scala
+2023.05.23 19:47:42 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/Main.scala
+May 23, 2023 7:47:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/Main.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/Main.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:743)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:731)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2112)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/Main.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:469)
+	at scala.meta.internal.metals.MetalsLspService.executeCommand(MetalsLspService.scala:2031)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.05.23 19:47:47 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/build.sbt
+2023.05.23 19:48:00 INFO  no build target found for /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.05.23 19:48:03 INFO  time: code lens generation in 5.1s
+2023.05.23 19:48:04 INFO  time: code lens generation in 16s
+2023.05.23 19:48:04 INFO  time: code lens generation in 19s
+2023.05.23 19:48:04 INFO  time: code lens generation in 33s
+2023.05.23 19:48:04 INFO  time: code lens generation in 33s
+2023.05.23 19:56:00 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/Main.scala
+2023.05.23 19:56:11 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/Main.scala
+2023.05.23 19:56:12 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/Main.scala
+2023.05.23 19:56:24 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/Main.scala
+2023.05.23 19:56:46 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/Main.scala
+2023.05.23 19:56:54 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 19:57:38 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 19:57:39 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 19:57:40 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 19:59:07 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 19:59:25 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:00:18 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:00:29 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:00:36 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:00:41 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:00:51 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:01:43 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:01:55 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:02:05 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:02:22 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:03:20 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:03:35 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:04:01 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:04:15 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:11:27 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:11:27 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:11:27 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:11:28 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:13:44 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:13:49 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:18:50 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:19:06 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:19:48 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/HelloWorld.scala
+2023.05.23 20:29:50 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/Inheritance.scala
+2023.05.23 20:29:54 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/Inheritance.scala
+2023.05.23 20:31:25 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/Inheritance.scala
+2023.05.23 21:43:06 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientedLanguage.scala
+2023.05.23 21:52:11 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 21:52:57 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 21:52:58 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 21:53:32 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 21:55:44 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 21:55:59 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 21:57:09 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:00:56 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:02:44 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:05:03 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:06:33 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:06:40 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:06:43 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:09:09 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:09:11 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:09:25 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:09:45 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:09:50 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:10:12 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+May 23, 2023 10:12:57 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 23, 2023 10:13:07 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.23 22:13:25 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:13:41 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:13:52 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:14:24 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:15:11 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:15:11 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:15:20 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:15:34 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:19:49 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:19:55 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:20:29 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+May 23, 2023 10:20:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5934
+2023.05.23 22:26:22 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+May 23, 2023 10:27:49 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.SignatureHelpProvider$.isValid(SignatureHelpProvider.scala:83)
+	at scala.meta.internal.pc.SignatureHelpProvider$.notCurrentApply(SignatureHelpProvider.scala:94)
+	at scala.meta.internal.pc.SignatureHelpProvider$.$anonfun$1(SignatureHelpProvider.scala:48)
+	at scala.collection.StrictOptimizedLinearSeqOps.loop$3(LinearSeq.scala:280)
+	at scala.collection.StrictOptimizedLinearSeqOps.dropWhile(LinearSeq.scala:282)
+	at scala.collection.StrictOptimizedLinearSeqOps.dropWhile$(LinearSeq.scala:278)
+	at scala.collection.immutable.List.dropWhile(List.scala:79)
+	at scala.meta.internal.pc.SignatureHelpProvider$.signatureHelp(SignatureHelpProvider.scala:48)
+
+2023.05.23 22:33:03 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:33:10 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:33:15 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:33:30 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:33:45 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:34:00 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:34:35 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:36:17 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:36:27 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:36:39 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:36:40 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:37:32 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:37:36 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:37:51 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.23 22:38:13 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+May 23, 2023 10:38:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7832
+2023.05.23 22:38:23 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+May 23, 2023 10:41:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8175
+2023.05.23 22:44:00 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.23 22:48:31 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.23 22:54:33 INFO  Shutting down server
+2023.05.23 22:54:33 INFO  shutting down Metals
+2023.05.23 22:54:33 INFO  Exiting server
+2023.05.24 01:11:26 INFO  Started: Metals version 0.11.12 in workspace '/Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world' for client Visual Studio Code 1.70.2.
+May 24, 2023 1:11:26 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+May 24, 2023 1:11:26 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+May 24, 2023 1:11:26 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+May 24, 2023 1:11:28 AM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:/Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/.metals/metals (H2 2.1)
+May 24, 2023 1:11:28 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.052s)
+May 24, 2023 1:11:28 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+May 24, 2023 1:11:28 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.05.24 01:11:28 INFO  time: initialize in 2.16s
+2023.05.24 01:11:34 WARN  Build server is not auto-connectable.
+2023.05.24 01:11:34 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 01:11:34 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.24 01:11:39 INFO  no build target found for /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.05.24 01:11:43 INFO  time: code lens generation in 7.57s
+May 24, 2023 11:39:42 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 29
+2023.05.24 11:40:45 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 11:41:20 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+May 24, 2023 11:41:20 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala:19: error: unclosed string literal
+    bob(43")
+          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:591)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:407)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:411)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:246)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.acceptBalancedDelimeters(ScalaToplevelMtags.scala:520)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:338)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:53)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:41)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:100)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:371)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:291)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:291)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:286)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2693)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2689)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1526)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1525)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 16 more
+
+2023.05.24 11:41:22 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 11:41:36 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 11:42:06 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 11:42:18 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 11:43:25 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 11:43:35 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 11:43:36 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 11:43:37 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 11:43:48 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 11:43:55 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 11:43:57 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 11:45:40 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 11:45:46 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+May 24, 2023 11:47:00 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.SignatureHelpProvider$.isValid(SignatureHelpProvider.scala:83)
+	at scala.meta.internal.pc.SignatureHelpProvider$.notCurrentApply(SignatureHelpProvider.scala:96)
+	at scala.meta.internal.pc.SignatureHelpProvider$.$anonfun$1(SignatureHelpProvider.scala:48)
+	at scala.collection.StrictOptimizedLinearSeqOps.loop$3(LinearSeq.scala:280)
+	at scala.collection.StrictOptimizedLinearSeqOps.dropWhile(LinearSeq.scala:282)
+	at scala.collection.StrictOptimizedLinearSeqOps.dropWhile$(LinearSeq.scala:278)
+	at scala.collection.immutable.List.dropWhile(List.scala:79)
+	at scala.meta.internal.pc.SignatureHelpProvider$.signatureHelp(SignatureHelpProvider.scala:48)
+
+May 24, 2023 11:47:02 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.SignatureHelpProvider$.isValid(SignatureHelpProvider.scala:83)
+	at scala.meta.internal.pc.SignatureHelpProvider$.notCurrentApply(SignatureHelpProvider.scala:96)
+	at scala.meta.internal.pc.SignatureHelpProvider$.$anonfun$1(SignatureHelpProvider.scala:48)
+	at scala.collection.StrictOptimizedLinearSeqOps.loop$3(LinearSeq.scala:280)
+	at scala.collection.StrictOptimizedLinearSeqOps.dropWhile(LinearSeq.scala:282)
+	at scala.collection.StrictOptimizedLinearSeqOps.dropWhile$(LinearSeq.scala:278)
+	at scala.collection.immutable.List.dropWhile(List.scala:79)
+	at scala.meta.internal.pc.SignatureHelpProvider$.signatureHelp(SignatureHelpProvider.scala:48)
+
+May 24, 2023 11:47:03 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.SignatureHelpProvider$.isValid(SignatureHelpProvider.scala:83)
+	at scala.meta.internal.pc.SignatureHelpProvider$.notCurrentApply(SignatureHelpProvider.scala:96)
+	at scala.meta.internal.pc.SignatureHelpProvider$.$anonfun$1(SignatureHelpProvider.scala:48)
+	at scala.collection.StrictOptimizedLinearSeqOps.loop$3(LinearSeq.scala:280)
+	at scala.collection.StrictOptimizedLinearSeqOps.dropWhile(LinearSeq.scala:282)
+	at scala.collection.StrictOptimizedLinearSeqOps.dropWhile$(LinearSeq.scala:278)
+	at scala.collection.immutable.List.dropWhile(List.scala:79)
+	at scala.meta.internal.pc.SignatureHelpProvider$.signatureHelp(SignatureHelpProvider.scala:48)
+
+2023.05.24 11:48:12 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 12:48:42 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 12:48:43 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 12:48:51 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 12:51:37 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 12:51:58 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 12:52:15 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 12:52:33 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 12:52:38 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 12:52:42 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 12:52:52 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 12:52:56 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 12:56:40 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+Exception in thread "pool-3-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Exception in thread "pool-3-thread-2" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023.05.24 13:10:44 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:10:54 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:11:10 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:11:10 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:11:25 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:11:30 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:12:47 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:15:01 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:15:02 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:15:07 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:16:43 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:17:26 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:17:31 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:42:06 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.24 13:45:15 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:45:33 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:45:37 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:45:46 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:45:54 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+Exception in thread "pool-3-thread-3" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023.05.24 13:50:12 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:53:09 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:53:46 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:54:12 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:54:48 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:55:08 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:55:08 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:55:21 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:55:29 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 13:55:47 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 13:56:03 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 13:56:43 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 13:56:57 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 13:57:11 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 13:57:22 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 13:57:59 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 13:58:49 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 13:59:03 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 13:59:38 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:00:07 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:02:33 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:02:34 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:02:40 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:04:04 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:13:50 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:14:09 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:15:17 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:15:31 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:15:41 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:19:30 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:19:35 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:23:21 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:23:53 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:23:59 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:24:33 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:24:34 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+May 24, 2023 2:27:59 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.24 14:28:39 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+May 24, 2023 2:28:41 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 24, 2023 2:28:42 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.24 14:28:47 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+May 24, 2023 2:29:18 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.24 14:29:30 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:29:34 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:30:11 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:39:55 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:40:06 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 14:40:19 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+May 24, 2023 2:40:32 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.24 14:44:22 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 15:06:24 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 15:06:37 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 15:13:45 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 15:14:02 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 15:17:08 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 15:17:16 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 15:17:41 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 15:21:56 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 16:08:09 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 16:27:57 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 16:30:08 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 16:30:54 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 16:31:40 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 16:31:45 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 18:50:54 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 18:51:13 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 18:51:35 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.05.24 18:51:50 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 18:51:50 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 18:51:54 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 18:52:02 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 18:52:13 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 18:52:38 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 18:53:05 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+May 24, 2023 6:53:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: begin 435, end 461, length 459
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: begin 435, end 461, length 459
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: begin 435, end 461, length 459
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+	at java.base/java.lang.String.substring(String.java:1874)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.getIndentForPos(FlatMapToForComprehensionCodeAction.scala:677)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$4(FlatMapToForComprehensionCodeAction.scala:57)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$3(FlatMapToForComprehensionCodeAction.scala:53)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$2(FlatMapToForComprehensionCodeAction.scala:52)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$1(FlatMapToForComprehensionCodeAction.scala:51)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+May 24, 2023 6:53:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8970
+2023.05.24 18:53:24 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 18:53:48 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 18:53:59 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 18:54:19 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 18:55:33 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 18:55:41 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 18:55:57 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 18:56:10 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 18:56:23 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:00:49 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:00:49 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:00:52 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:01:06 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:01:30 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:01:39 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:01:47 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:02:04 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.24 19:02:08 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:02:14 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:02:24 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:02:38 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:02:45 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:02:46 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:03:06 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:03:23 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:06:38 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:06:49 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:07:02 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:07:28 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:07:47 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:08:06 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:08:20 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:08:31 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:08:38 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:13:35 WARN  Using indexes to guess the definition of aMap
+2023.05.24 19:13:46 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:16:46 WARN  Using indexes to guess the definition of aMap
+2023.05.24 19:17:04 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:17:15 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:18:07 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:18:19 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:19:34 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:21:05 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:21:17 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:21:48 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:24:41 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:25:03 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:25:11 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:25:17 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:25:23 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:25:39 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+May 24, 2023 7:37:43 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.24 19:39:15 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:39:44 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:52:32 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:52:34 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 19:58:50 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:05:26 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:12:37 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:12:45 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:12:55 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:13:06 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:13:17 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:13:37 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:15:58 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:16:23 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:19:51 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:23:23 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:23:27 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:23:50 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:24:09 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:31:21 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:34:30 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:34:46 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:35:00 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:37:24 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:43:23 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:43:23 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:50:25 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:50:54 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:51:10 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:52:00 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:55:05 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:55:09 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:55:21 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:55:55 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:56:14 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.24 20:56:39 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+May 24, 2023 9:51:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12980
+2023.05.24 21:52:31 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.25 09:56:09 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.25 09:57:03 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.25 09:57:22 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.25 09:57:28 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.25 09:57:43 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.25 09:57:53 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.25 09:58:12 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.25 09:58:30 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+May 25, 2023 10:10:52 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 25, 2023 10:10:53 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 25, 2023 10:10:54 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 25, 2023 10:10:58 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 25, 2023 11:17:44 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 25, 2023 11:17:44 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 25, 2023 11:17:45 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 25, 2023 11:17:47 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.05.25 11:18:47 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.25 11:19:06 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.25 11:20:32 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.25 11:38:01 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.25 11:38:10 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.25 11:38:19 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.25 11:38:27 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.25 11:39:46 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.25 11:46:01 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.25 11:46:26 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/ObjectOrientation.scala
+2023.05.25 11:49:03 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.25 11:49:26 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.25 11:49:53 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/functionalProgramming.scala
+2023.05.25 11:50:15 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+2023.05.25 11:50:34 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/test.scala
+May 28, 2023 2:51:00 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 28, 2023 2:51:02 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 31, 2023 3:25:29 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 31, 2023 3:25:30 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 31, 2023 11:25:20 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jun 06, 2023 1:17:24 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.06.12 18:18:56 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/hello-world/src/main/scala/dataStructures.scala
+2023.06.12 18:18:56 INFO  Shutting down server
+2023.06.12 18:18:56 INFO  shutting down Metals
+2023.06.12 18:18:57 INFO  Exiting server

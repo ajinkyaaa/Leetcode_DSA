@@ -1,0 +1,6 @@
+jaccard
+intersection/unions
+
+w-shingling
+ngram- 1 wrd set, 2 wrd set etc
+

@@ -1,0 +1,34 @@
+Psuedo collections:- Option, Try => unsafe methods => can return null
+
+Option:-
+collection which contains atmost 1 element
+handle null condition
+eg:- Option(methodwhichcanreturnnull()) = Some or none
+Some is subtype of option abstract type
+Steps:-
+wrap unsafe code in option and do pattern match on it.
+
+Concurrency asynchronous:- scala concurrence
+Future
+
+val aFuture = Future({
+//global, collection of threads
+// future is a collection which contains a value when its evaluated
+// can use map flatmap and filter
+})
+
+implicist arguements:- 
+def method(implicit arg:int) = arg +1
+implicit val value = 46
+print(directly call method without passing parameter)
+
+implicit class MyRichInteger(n:Int)
+compiler finds implicit class or method or number
+
+Functions are abstract, override and use
+
+override:-
+cant use val in override
+
+iterate:-
+val result = (1 to 10).map(_ => println(_))

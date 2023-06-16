@@ -179,3 +179,16 @@ n = n == 9+99 +999+9999+321
 10 + 100 +1000
 
 pri
+
+
+Can you describe the typical day-to-day responsibilities of someone in this role?
+What are the current projects or initiatives that the team is working on?
+How would you describe the team dynamics and collaboration within the company?
+Can you tell me more about the company culture and values?
+Are there any opportunities for professional development or further training in this role?
+What are the biggest challenges or opportunities that the company/team is currently facing?
+How does the company support work-life balance for its employees?
+What is the preferred communication and collaboration method within the team?
+Can you provide more details about the career growth opportunities within the company?
+What is the next step in the hiring process? When can I expect to hear back from you?
+Remember, the questions you ask should be thoughtful and relevant to the position and company. They should demonstrate your enthusiasm and desire to learn more while also helping you gather valuable information to evaluate if the role and company align with your goals and expectations.
