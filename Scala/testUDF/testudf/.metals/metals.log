@@ -1,0 +1,95 @@
+2023.07.20 10:35:31 INFO  Started: Metals version 0.11.12 in workspace '/Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf' for client Visual Studio Code 1.70.2.
+Jul 20, 2023 10:35:31 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+Jul 20, 2023 10:35:31 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Jul 20, 2023 10:35:31 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Jul 20, 2023 10:35:32 AM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:/Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/.metals/metals (H2 2.1)
+Jul 20, 2023 10:35:32 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+Jul 20, 2023 10:35:32 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.021s)
+Jul 20, 2023 10:35:32 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+Jul 20, 2023 10:35:32 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+Jul 20, 2023 10:35:32 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+Jul 20, 2023 10:35:32 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+Jul 20, 2023 10:35:32 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+Jul 20, 2023 10:35:32 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+Jul 20, 2023 10:35:32 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.058s)
+2023.07.20 10:35:32 INFO  time: initialize in 0.74s
+2023.07.20 10:35:34 WARN  Build server is not auto-connectable.
+2023.07.20 10:35:34 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/src/main/scala/Main.scala
+Jul 20, 2023 10:35:34 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2023.07.20 10:35:40 INFO  no build target found for /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.07.20 10:35:43 INFO  time: code lens generation in 6.82s
+2023.07.20 10:35:43 INFO  time: code lens generation in 1.28s
+2023.07.20 10:35:43 INFO  time: code lens generation in 8.5s
+2023.07.20 10:50:55 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/src/main/scala/Main.scala
+2023.07.20 10:50:58 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/src/main/scala/Main.scala
+2023.07.20 10:51:04 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/src/main/scala/Main.scala
+2023.07.20 10:51:04 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/src/main/scala/Main.scala
+2023.07.20 10:51:05 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/src/main/scala/Main.scala
+2023.07.20 10:51:05 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/src/main/scala/Main.scala
+2023.07.20 10:51:05 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/src/main/scala/Main.scala
+2023.07.20 10:51:05 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/src/main/scala/Main.scala
+2023.07.20 10:51:29 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/build.sbt
+2023.07.20 10:51:45 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/build.sbt
+2023.07.20 10:51:47 INFO  running '/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/67/x42nlb0102s7dsr21yg8_1zc0000gn/T/metals6527900064335936230/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2023.07.20 10:51:47 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/project/metals.sbt
+2023.07.20 10:51:47 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/project/project/metals.sbt
+2023.07.20 10:51:47 ERROR [info] [launcher] getting org.scala-sbt sbt 1.9.2  (this may take some time)...
+2023.07.20 10:51:51 INFO  [info] welcome to sbt 1.9.2 (Oracle Corporation Java 11.0.18)
+2023.07.20 10:51:54 INFO  [info] loading settings for project testudf-build-build from metals.sbt ...
+2023.07.20 10:51:54 INFO  [info] loading project definition from /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/project/project
+2023.07.20 10:51:57 INFO  [info] loading settings for project testudf-build from metals.sbt ...
+2023.07.20 10:51:57 INFO  [info] loading project definition from /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/project
+2023.07.20 10:51:59 INFO  [success] Generated .bloop/testudf-build.json
+2023.07.20 10:51:59 INFO  [success] Total time: 2 s, completed Jul 20, 2023, 10:51:59 AM
+2023.07.20 10:52:01 INFO  [info] loading settings for project testudf from build.sbt ...
+2023.07.20 10:52:01 INFO  [info] set current project to testudf (in build file:/Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/)
+2023.07.20 10:52:02 INFO  skipping build import with status 'Dismissed'
+2023.07.20 10:52:10 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/build.sbt
+2023.07.20 10:52:10 INFO  skipping build import with status 'Dismissed'
+2023.07.20 10:52:12 INFO  [success] Generated .bloop/testudf-test.json
+2023.07.20 10:52:12 INFO  [success] Generated .bloop/testudf.json
+2023.07.20 10:52:12 INFO  [success] Total time: 11 s, completed Jul 20, 2023, 10:52:12 AM
+2023.07.20 10:52:12 INFO  time: ran 'sbt bloopInstall' in 25s
+2023.07.20 10:52:12 INFO  Attempting to connect to the build server...
+2023.07.20 10:52:12 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home defined at /Users/ajinkyaparkar/.bloop/bloop.json
+2023.07.20 10:52:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/.metals/bsp.trace.json or /Users/ajinkyaparkar/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.07.20 10:52:14 WARN  no build target for: /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/build.sbt
+2023.07.20 10:52:14 INFO  skipping build import with status 'Dismissed'
+2023.07.20 10:52:15 INFO  Attempting to connect to the build server...
+2023.07.20 10:52:15 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home defined at /Users/ajinkyaparkar/.bloop/bloop.json
+2023.07.20 10:52:15 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/project/.metals/bsp.trace.json or /Users/ajinkyaparkar/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.07.20 10:52:15 INFO  time: Connected to build server in 2.77s
+2023.07.20 10:52:15 INFO  Connected to Build server: Bloop v1.5.6
+2023.07.20 10:52:15 INFO  time: Imported build in 0.12s
+2023.07.20 10:52:24 INFO  time: indexed workspace in 9.05s
+2023.07.20 10:52:24 INFO  compiling testudf (1 scala source)
+2023.07.20 10:52:41 INFO  time: compiled testudf in 16s
+2023.07.20 10:54:05 INFO  compiling testudf (1 scala source)
+2023.07.20 10:54:05 INFO  time: compiled testudf in 0.94s
+2023.07.20 10:55:03 INFO  compiling testudf (1 scala source)
+2023.07.20 10:55:06 WARN  one deprecation (since 3.0.0); re-run with -deprecation for details
+2023.07.20 10:55:06 INFO  time: compiled testudf in 3.13s
+Jul 20, 2023 12:26:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 478
+2023.07.20 12:26:20 INFO  compiling testudf (1 scala source)
+2023.07.20 12:26:21 WARN  one deprecation (since 3.0.0); re-run with -deprecation for details
+2023.07.20 12:26:21 INFO  time: compiled testudf in 2s
+2023.07.20 12:32:20 INFO  compiling testudf (1 scala source)
+2023.07.20 12:32:20 INFO  time: compiled testudf in 0.68s
+2023.07.20 12:36:08 INFO  compiling testudf (1 scala source)
+2023.07.20 12:36:09 WARN  one deprecation (since 3.0.0); re-run with -deprecation for details
+2023.07.20 12:36:09 INFO  time: compiled testudf in 1.71s
