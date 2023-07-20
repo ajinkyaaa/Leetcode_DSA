@@ -1,0 +1,55 @@
+spark.eventLog.enabled, true
+spark.app.startTime, 1689871052572
+spark.hadoop.mapreduce.fileoutputcommitter.algorithm.version.emr_internal_use_only.EmrFileSystem, 2
+spark.executor.memory, 9486M
+spark.driver.extraJavaOptions, -XX:+IgnoreUnrecognizedVMOptions --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/sun.nio.cs=ALL-UNNAMED --add-opens=java.base/sun.security.action=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED -XX:OnOutOfMemoryError='kill -9 %p'
+spark.sql.parquet.output.committer.class, com.amazon.emr.committer.EmrOptimizedSparkSqlParquetOutputCommitter
+spark.app.id, application_1689870017052_0003
+spark.blacklist.decommissioning.timeout, 1h
+spark.yarn.dist.files, file:/etc/hudi/conf.dist/hudi-defaults.conf
+spark.app.initial.jar.urls, s3://hivesparkbucketaj/main_2.12-1.0.jar
+spark.yarn.appMasterEnv.SPARK_PUBLIC_DNS, $(hostname -f)
+spark.app.name, Create DataFrame with Ids
+spark.executor.cores, 4
+spark.jars, s3://hivesparkbucketaj/main_2.12-1.0.jar
+spark.sql.emr.internal.extensions, com.amazonaws.emr.spark.EmrSparkSessionExtensions
+spark.driver.host, ip-172-31-7-111.us-east-2.compute.internal
+spark.eventLog.dir, hdfs:///var/log/spark/apps
+spark.sql.hive.metastore.sharedPrefixes, com.amazonaws.services.dynamodbv2
+spark.submit.deployMode, client
+spark.history.fs.logDirectory, hdfs:///var/log/spark/apps
+spark.ui.filters, org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+spark.sql.parquet.fs.optimized.committer.optimization-enabled, true
+spark.app.submitTime, 1689871052523
+spark.executor.extraClassPath, /usr/lib/hadoop-lzo/lib/*:/usr/lib/hadoop/hadoop-aws.jar:/usr/share/aws/aws-java-sdk/*:/usr/share/aws/emr/goodies/lib/emr-spark-goodies.jar:/usr/share/aws/emr/security/conf:/usr/share/aws/emr/security/lib/*:/usr/share/aws/redshift/jdbc/RedshiftJDBC.jar:/usr/share/aws/redshift/spark-redshift/lib/*:/usr/share/aws/hmclient/lib/aws-glue-datacatalog-spark-client.jar:/usr/share/java/Hive-JSON-Serde/hive-openx-serde.jar:/usr/share/aws/sagemaker-spark-sdk/lib/sagemaker-spark-sdk.jar:/usr/share/aws/emr/s3select/lib/emr-s3-select-spark-connector.jar:/docker/usr/lib/hadoop-lzo/lib/*:/docker/usr/lib/hadoop/hadoop-aws.jar:/docker/usr/share/aws/aws-java-sdk/*:/docker/usr/share/aws/emr/goodies/lib/emr-spark-goodies.jar:/docker/usr/share/aws/emr/security/conf:/docker/usr/share/aws/emr/security/lib/*:/docker/usr/share/aws/redshift/jdbc/RedshiftJDBC.jar:/docker/usr/share/aws/redshift/spark-redshift/lib/*:/docker/usr/share/aws/hmclient/lib/aws-glue-datacatalog-spark-client.jar:/docker/usr/share/java/Hive-JSON-Serde/hive-openx-serde.jar:/docker/usr/share/aws/sagemaker-spark-sdk/lib/sagemaker-spark-sdk.jar:/docker/usr/share/aws/emr/s3select/lib/emr-s3-select-spark-connector.jar
+spark.driver.extraLibraryPath, /usr/lib/hadoop/lib/native:/usr/lib/hadoop-lzo/lib/native:/docker/usr/lib/hadoop/lib/native:/docker/usr/lib/hadoop-lzo/lib/native
+spark.hadoop.mapreduce.fileoutputcommitter.cleanup-failures.ignored.emr_internal_use_only.EmrFileSystem, true
+spark.yarn.heterogeneousExecutors.enabled, true
+spark.executor.extraLibraryPath, /usr/lib/hadoop/lib/native:/usr/lib/hadoop-lzo/lib/native:/docker/usr/lib/hadoop/lib/native:/docker/usr/lib/hadoop-lzo/lib/native
+spark.history.ui.port, 18080
+spark.shuffle.service.enabled, true
+spark.sql.warehouse.dir, hdfs://ip-172-31-7-111.us-east-2.compute.internal:8020/user/spark/warehouse
+spark.driver.port, 45059
+spark.hadoop.yarn.timeline-service.enabled, false
+spark.driver.defaultJavaOptions, -XX:OnOutOfMemoryError='kill -9 %p'
+spark.resourceManager.cleanupExpiredHost, true
+spark.executor.defaultJavaOptions, -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:OnOutOfMemoryError='kill -9 %p'
+spark.org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter.param.PROXY_HOSTS, ip-172-31-7-111.us-east-2.compute.internal
+spark.executor.id, driver
+spark.driver.appUIAddress, http://ip-172-31-7-111.us-east-2.compute.internal:4040
+spark.files.fetchFailure.unRegisterOutputOnHost, true
+spark.driver.memory, 2048M
+spark.driver.extraClassPath, /usr/lib/hadoop-lzo/lib/*:/usr/lib/hadoop/hadoop-aws.jar:/usr/share/aws/aws-java-sdk/*:/usr/share/aws/emr/goodies/lib/emr-spark-goodies.jar:/usr/share/aws/emr/security/conf:/usr/share/aws/emr/security/lib/*:/usr/share/aws/redshift/jdbc/RedshiftJDBC.jar:/usr/share/aws/redshift/spark-redshift/lib/*:/usr/share/aws/hmclient/lib/aws-glue-datacatalog-spark-client.jar:/usr/share/java/Hive-JSON-Serde/hive-openx-serde.jar:/usr/share/aws/sagemaker-spark-sdk/lib/sagemaker-spark-sdk.jar:/usr/share/aws/emr/s3select/lib/emr-s3-select-spark-connector.jar:/docker/usr/lib/hadoop-lzo/lib/*:/docker/usr/lib/hadoop/hadoop-aws.jar:/docker/usr/share/aws/aws-java-sdk/*:/docker/usr/share/aws/emr/goodies/lib/emr-spark-goodies.jar:/docker/usr/share/aws/emr/security/conf:/docker/usr/share/aws/emr/security/lib/*:/docker/usr/share/aws/redshift/jdbc/RedshiftJDBC.jar:/docker/usr/share/aws/redshift/spark-redshift/lib/*:/docker/usr/share/aws/hmclient/lib/aws-glue-datacatalog-spark-client.jar:/docker/usr/share/java/Hive-JSON-Serde/hive-openx-serde.jar:/docker/usr/share/aws/sagemaker-spark-sdk/lib/sagemaker-spark-sdk.jar:/docker/usr/share/aws/emr/s3select/lib/emr-s3-select-spark-connector.jar
+spark.yarn.historyServer.address, ip-172-31-7-111.us-east-2.compute.internal:18080
+spark.master, yarn
+spark.hadoop.mapreduce.output.fs.optimized.committer.enabled, true
+spark.emr.default.executor.memory, 9486M
+spark.decommissioning.timeout.threshold, 20
+spark.executor.extraJavaOptions, -XX:+IgnoreUnrecognizedVMOptions --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/sun.nio.cs=ALL-UNNAMED --add-opens=java.base/sun.security.action=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:OnOutOfMemoryError='kill -9 %p'
+spark.stage.attempt.ignoreOnDecommissionFetchFailure, true
+spark.org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter.param.PROXY_URI_BASES, http://ip-172-31-7-111.us-east-2.compute.internal:20888/proxy/application_1689870017052_0003
+spark.submit.pyFiles, 
+spark.dynamicAllocation.enabled, true
+spark.emr.default.executor.cores, 4
+spark.hadoop.fs.s3.getObject.initialSocketTimeoutMilliseconds, 2000
+spark.blacklist.decommissioning.enabled, true
