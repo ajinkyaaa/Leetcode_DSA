@@ -93,3 +93,53 @@ WARNING: Unmatched cancel notification for request id 478
 2023.07.20 12:36:08 INFO  compiling testudf (1 scala source)
 2023.07.20 12:36:09 WARN  one deprecation (since 3.0.0); re-run with -deprecation for details
 2023.07.20 12:36:09 INFO  time: compiled testudf in 1.71s
+2023.07.21 04:52:39 INFO  Shutting down server
+2023.07.21 04:52:39 INFO  shutting down Metals
+2023.07.21 04:52:39 INFO  Exiting server
+2023.07.21 18:10:38 INFO  Started: Metals version 1.0.0 in folders '/Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf' for client Visual Studio Code 1.70.2.
+Jul 21, 2023 6:10:38 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.20.1 by Redgate
+Jul 21, 2023 6:10:38 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Jul 21, 2023 6:10:38 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Jul 21, 2023 6:10:38 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:/Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/.metals/metals (H2 2.1)
+Jul 21, 2023 6:10:38 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.025s)
+Jul 21, 2023 6:10:38 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Jul 21, 2023 6:10:38 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.07.21 18:10:38 INFO  time: initialize in 0.96s
+2023.07.21 18:10:41 INFO  Attempting to connect to the build server...
+2023.07.21 18:10:41 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home defined at /Users/ajinkyaparkar/.bloop/bloop.json
+2023.07.21 18:10:41 INFO  skipping build import with status 'Installed'
+2023.07.21 18:10:46 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/.metals/bsp.trace.json or /Users/ajinkyaparkar/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.07.21 18:10:49 INFO  Attempting to connect to the build server...
+2023.07.21 18:10:49 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home defined at /Users/ajinkyaparkar/.bloop/bloop.json
+2023.07.21 18:10:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/project/.metals/bsp.trace.json or /Users/ajinkyaparkar/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.07.21 18:10:49 INFO  time: Connected to build server in 8.89s
+2023.07.21 18:10:49 INFO  Connected to Build server: Bloop v1.5.8
+2023.07.21 18:10:50 INFO  time: Imported build in 0.22s
+2023.07.21 18:10:59 INFO  time: indexed workspace in 8.81s
+2023.07.21 18:11:00 INFO  compiling testudf (1 scala source)
+2023.07.21 18:11:20 WARN  one deprecation (since 3.0.0); re-run with -deprecation for details
+2023.07.21 18:11:20 INFO  time: compiled testudf in 20s
+2023.07.24 15:07:51 INFO  
+2023.07.24 15:07:51 INFO  Template applied in /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/./touppercase
+2023.07.24 15:07:51 INFO  
+2023.07.24 15:07:51 INFO  time: ran 'giter8.Giter8' in 2.67s
+2023.07.24 15:08:18 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home defined at /Users/ajinkyaparkar/.bloop/bloop.json
+2023.07.24 15:08:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/project/.metals/bsp.trace.json or /Users/ajinkyaparkar/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.07.24 15:08:19 INFO  time: code lens generation in 1.56s
+2023.07.24 15:27:56 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home defined at /Users/ajinkyaparkar/.bloop/bloop.json
+2023.07.24 15:27:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ajinkyaparkar/Documents/leetcode/Scala/testUDF/testudf/.metals/bsp.trace.json or /Users/ajinkyaparkar/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.07.24 15:27:56 INFO  Connected to Build server: Bloop v1.5.8
+2023.07.24 15:28:00 INFO  time: indexed workspace in 3.44s
+2023.07.24 15:32:15 INFO  compiling testudf (1 scala source)
+2023.07.24 15:32:17 WARN  one deprecation (since 3.0.0); re-run with -deprecation for details
+2023.07.24 15:32:17 INFO  time: compiled testudf in 1.88s
+2023.07.24 16:06:06 INFO  compiling testudf (1 scala source)
+2023.07.24 16:06:08 WARN  one deprecation (since 3.0.0); re-run with -deprecation for details
+2023.07.24 16:06:08 INFO  time: compiled testudf in 1.84s

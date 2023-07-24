@@ -36,9 +36,9 @@ object Main {
 
         // Use the UDF in your DataFrame operations
     val dfUdf = df.withColumn("id", myUdf(col("id"))).select("id")
-
+    dfUdf.show()  
    val arrayConfig=spark.sparkContext.getConf.getAll
-    for (conf <- arrayConfig)
+   for (conf <- arrayConfig)
     println(conf._1 +", "+ conf._2)
     // Show the result
     dfUdf.show()
